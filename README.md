@@ -12,6 +12,7 @@ NodeSense aims to provide a practical and visual tool for applying George Kelly'
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Additional Requirements](#additional-requirements)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -57,6 +58,7 @@ NodeSense aims to provide a practical and visual tool for applying George Kelly'
 - Use Ctrl+Click to create edges between nodes.
 - Use the sentiment panel to assign sentiment to nodes.
 - Use the "Toggle Special Node" button to highlight important concepts.
+- Click node or edge, then press supr to delete it.
 
 ## Project Structure
 - 'app.py': The main Flask application file.
@@ -65,14 +67,23 @@ NodeSense aims to provide a practical and visual tool for applying George Kelly'
 - 'styles.css': The man CSS file for the application.
 - 'particles.js': JavaScript file containing style particles to give an 'Under the Water / Hydrocephalus effect'
 
+### Additional Requirements
+
+In addition, you will need the spaCy language models using these commands:
+
+```sh
+python -m spacy download en_core_web_sm
+python -m spacy download es_core_news_sm
+```
+
 ## Contributing
 Feel welcome to contribute! follow these steps:
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit them (git commit -m 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Create a new Pull Request.
+- Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Make your changes and commit them (git commit -m 'Add new feature').
+- Push to the branch (git push origin feature-branch).
+- Create a new Pull Request.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
